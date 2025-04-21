@@ -126,3 +126,20 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
         justify-content: space-between;
     }
 }
+
+
+/* Made by https://github.com/NSPC911 */
+/* Using fixed Code from https://github.com/Rejdesu */
+/* status based activity icon */
+[class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg>path[fill="#40a258"] {
+    fill: #43b581;
+}
+[class^=memberInner]:has(> div > [aria-label*="Idle"]) [class^=subText] svg>path[fill="#40a258"] {
+    fill: #f0b232;
+}
+[class^=memberInner]:has(> div > [aria-label*="Do Not Disturb"]) [class^=subText] svg>path[fill="#40a258"] {
+    fill: #f23f43;
+}
+[class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=subText] svg>path[fill="#40a258"] {
+    fill: #643da7;
+}
