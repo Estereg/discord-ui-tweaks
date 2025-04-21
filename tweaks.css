@@ -143,3 +143,15 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
 [class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=subText] svg>path[fill="#40a258"] {
     fill: #643da7;
 }
+
+
+/* Made by https://github.com/MadelineMaid */
+/* remove fav icon background box in gifs */
+[class*='gifFavoriteButton_'] {
+    background-color: transparent;
+}
+
+/* move fav button back to left in gif search */
+[class*='result_'] [class*='favButton'] {
+    right: unset;
+}
