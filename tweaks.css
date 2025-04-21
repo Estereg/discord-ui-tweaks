@@ -168,7 +168,15 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
 
 /* Made by Sessh (A Discord User) */
 /* Remove chatbox Icons */
-.visual-refresh button[aria-label="Open sticker picker"], button[aria-label="Open GIF picker"], button[aria-label="Send a gift"], button[aria-label="Apps"] {
+/* to change, select one of the "button[aria-label="Select emoji"]" areas and change the text that's inside those " " */
+/*
+Select Emoji          - Emoji icon
+Open sticker picker   - Sticker icon
+Open GIF picker       - GIF icon
+Send a gift           - Gift icon
+Apps                  - Controller icon
+*/
+.visual-refresh button[aria-label="Select emoji"], button[aria-label="Open GIF picker"], button[aria-label="Send a gift"], button[aria-label="Apps"] {
   display: none;
 }
 .visual-refresh .buttons__74017 {
