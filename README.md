@@ -24,7 +24,7 @@ After:\
 ![image](https://github.com/user-attachments/assets/3aae9730-c95a-4703-aacc-7de1fc321f02)
 
 
-### Remove Profile Reactions | Made by [@LuSaffi[(https://github.com/LuSaffi)
+### Remove Profile Reactions | Made by [@LuSaffi](https://github.com/LuSaffi)
 Before:\
 ![image](https://github.com/user-attachments/assets/4d640ddb-701a-486a-b61f-974951a36d6d)
 
