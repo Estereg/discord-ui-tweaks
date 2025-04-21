@@ -69,6 +69,13 @@ Before and After:\
 ![image](https://github.com/user-attachments/assets/12f25673-98be-4100-b89a-8427de7b1725)
 
 
+### Status based activity icon | Made by [@NSPC911](https://github.com/NSPC911) | Using fixed code from [@Rejdesu](https://github.com/Rejdesu)
+Before:\
+![image](https://github.com/user-attachments/assets/1ccb579e-4885-4e65-97c8-959f5c7b668e)
+
+After:\
+![image](https://github.com/user-attachments/assets/b173d855-dc28-4314-9534-c60ec25db004)
+
 # Installing it to your Discord
 
 Use [Vencord](https://github.com/Vendicated/Vencord) or an equivalent client mod that allows you to install themes.
