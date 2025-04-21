@@ -1,0 +1,77 @@
+/* Made by https://github.com/sakgoyal */
+/* Move "Collapse" icon to the left of the category names */
+.containerDefault__29444 {
+  > div {
+    padding-left: 0.5em;
+
+    > div {
+      display: flex !important;
+      place-content: start !important;
+      flex-direction: row-reverse !important;
+    }
+  }
+}
+
+
+/* Made by https://github.com/LuSaffi */
+/* Remove Profile Reactions */
+.avatarPopover__2d0a, .statusPopover__2d0ab, .activityPopover__2d0ab{display:none;}
+
+
+/* Made by https://github.com/NSPC911 */
+/* Round Icons in Folders */
+.icon_f34534.guildIcon__48112 { border-radius: 50% !important }
+
+
+/* Made by myself */
+/* Unclamp User Bios to read full text in there */
+.descriptionClamp_f5f93a:not(.headerText_faa96b .descriptionClamp_f5f93a) {
+  -webkit-line-clamp: unset;
+  max-height: 400px;
+}
+.viewFullBio_f5f93a{display: none;
+}
+
+
+/* Made by https://github.com/hanyuko with a small tweak by my own */
+/* App-Tags revert to Bot-Tags */
+span[class*=botTag]:not(
+    span[class*=botTagAi],
+    span[class*=botTagCozy],
+    span[class*=botTagRemix],
+    span[class*=botTagOP]
+) span[class*=botText] {
+  visibility: hidden;
+}
+
+span[class*=botTag]:not(
+    span[class*=botTagAi],
+    span[class*=botTagCozy],
+    span[class*=botTagRemix],
+    span[class*=botTagOP]
+) span[class*=botText]:after {
+  content: 'BOT';
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  font-size: 0.625rem;
+}
+
+
+/* Made by https://github.com/Obsidianninja11 */
+/* Revert User Area to see Servers */
+.visual-refresh section.panels_c48ade {
+  left: calc(var(--custom-guild-list-width) + var(--space-xs));
+  width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
+  box-sizing: content-box;
+
+  .actionButtons_e131a9 button {
+    padding: 0;
+  }
+}
+nav.guilds_c48ade {
+  margin-bottom: 0 !important;
+}
+.sidebar_c48ade:after {
+  display: none;
+}
