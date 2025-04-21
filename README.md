@@ -64,6 +64,11 @@ After:\
 ![image](https://github.com/user-attachments/assets/9845e8d8-0715-4ca3-9c6f-a6f1f9f7fa57)
 
 
+### Better Bot forms | Made by [@nexpid](https://x.com/nexpid) - the picture as well!
+Before and After:\
+![image](https://github.com/user-attachments/assets/12f25673-98be-4100-b89a-8427de7b1725)
+
+
 # Installing it to your Discord
 
 Use [Vencord](https://github.com/Vendicated/Vencord) or an equivalent client mod that allows you to install themes.
