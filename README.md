@@ -76,6 +76,22 @@ Before:\
 After:\
 ![image](https://github.com/user-attachments/assets/b173d855-dc28-4314-9534-c60ec25db004)
 
+
+### Gif fav-icon improvements | Made by [@MadelineMaid](https://github.com/MadelineMaid)
+**FavIcon Background**\
+Before:\
+![image](https://github.com/user-attachments/assets/d3f06ee0-f019-4316-88fd-e235f26597dd)
+
+After:\
+![image](https://github.com/user-attachments/assets/26f70714-5746-4169-9644-54511fbf11d4)
+
+**FavIcon placement in Gif-search/picker**\
+Before:\
+![image](https://github.com/user-attachments/assets/e241381d-8fba-42fa-bd63-0238b41a94b2)
+
+After:\
+![image](https://github.com/user-attachments/assets/dcbf1d88-52a4-459a-a77e-fd4e6ba1c800)
+
 # Installing it to your Discord
 
 Use [Vencord](https://github.com/Vendicated/Vencord) or an equivalent client mod that allows you to install themes.
