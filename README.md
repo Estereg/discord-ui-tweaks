@@ -92,6 +92,14 @@ Before:\
 After:\
 ![image](https://github.com/user-attachments/assets/dcbf1d88-52a4-459a-a77e-fd4e6ba1c800)
 
+
+### Remove Chatbox Icons | Made by Sessh - A Discord User I cannot mention here
+Before:\
+![image](https://github.com/user-attachments/assets/450dfb09-efa6-465f-beca-049a0b20bec4)
+
+After:\
+![image](https://github.com/user-attachments/assets/2bbb8b96-d194-4a06-b0fc-ea3c9fcd90aa)
+
 # Installing it to your Discord
 
 Use [Vencord](https://github.com/Vendicated/Vencord) or an equivalent client mod that allows you to install themes.
