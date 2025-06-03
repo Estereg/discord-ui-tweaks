@@ -21,8 +21,8 @@
 }
 .containerDefault__29444 > div > div {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row-reverse;
+  justify-content: start !important;
+  flex-direction: row-reverse !important;
 }
 
 /* === Remove Profile Reactions (by LuSaffi) === */
@@ -33,11 +33,11 @@
 }
 
 /* === Round Guild Icons in Folders (by NSPC911) === */
-.icon_f34534.guildIcon__48112 {
-  border-radius: 50%;
+.icon_f34534.folderPreviewGuildIcon__48112 {
+  border-radius: 50% !important;
 }
 
-/* === Unclamp User Bios === */
+/* === Unclamp User Bios (by myself) === */
 .descriptionClamp_f5f93a:not(.headerText_faa96b .descriptionClamp_f5f93a) {
   -webkit-line-clamp: unset;
   max-height: 400px;
@@ -109,13 +109,6 @@ form > div.focusLock__49fc1 > div.rootWithShadow__49fc1 {
 .input__0f084.error__0f084:focus {
   color: var(--text-normal);
 }
-
-/* === Status-Based Activity Icon Fix (by NSPC911 / Rejdesu) === */
-/* NOTE: :has() is heavy. Optional performance tweak is to avoid this. */
-.memberInner__XXXXXX[aria-label*="Online"] [class^="subText"] svg > path[fill="#40a258"] { fill: #43b581; }
-.memberInner__XXXXXX[aria-label*="Idle"] [class^="subText"] svg > path[fill="#40a258"] { fill: #f0b232; }
-.memberInner__XXXXXX[aria-label*="Do Not Disturb"] [class^="subText"] svg > path[fill="#40a258"] { fill: #f23f43; }
-.memberInner__XXXXXX[aria-label*="Streaming"] [class^="subText"] svg > path[fill="#40a258"] { fill: #643da7; }
 
 /* === GIF Favorites Cleanup (by MadelineMaid) === */
 [class*="gifFavoriteButton_"] {
