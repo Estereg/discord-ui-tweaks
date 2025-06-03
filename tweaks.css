@@ -52,22 +52,6 @@ span[class*="botTag"]:not([class*="botTagAi"], [class*="botTagCozy"], [class*="b
   font-size: 0.625rem;
 }
 
-/* === Revert User Area Panel Spacing (by Obsidianninja11) === */
-.visual-refresh section.panels_c48ade {
-  left: calc(var(--custom-guild-list-width) + var(--space-xs));
-  width: calc(100% - var(--custom-guild-list-width) - var(--space-xs) * 2);
-  box-sizing: content-box;
-}
-.visual-refresh .actionButtons_e131a9 button {
-  padding: 0;
-}
-nav.guilds_c48ade {
-  margin-bottom: 0;
-}
-.sidebar_c48ade::after {
-  display: none;
-}
-
 /* === Bot Forms (by nexpId) === */
 form > div.focusLock__49fc1 > div.rootWithShadow__49fc1 {
   width: var(--modal-width-medium);
@@ -103,12 +87,13 @@ form > div.focusLock__49fc1 > div.rootWithShadow__49fc1 {
   color: var(--text-normal);
 }
 
-/* === GIF Favorites Cleanup (by MadelineMaid) === */
-[class*="gifFavoriteButton_"] {
-  background-color: transparent;
+/* 🔒 Ocultar sección "Actividad — 2" en Discord */
+.membersGroup_c8ffbb.container__13cf1.header__13cf1.text-sm\/medium__13cf1 {
+  display: none !important;
 }
-[class*="result_"] [class*="favButton"] {
-  right: unset;
+/* === Remove Help Button === */
+.anchor_edefb8[aria-label="Ayuda"] {
+  display: none !important;
 }
 
 /* === Remove Chatbox Icons (by Sessh) === */
@@ -120,36 +105,14 @@ Open GIF picker       - GIF icon
 Send a gift           - Gift icon
 Apps                  - Controller icon
 */
-.visual-refresh button[aria-label="Select emoji"],
-button[aria-label="Open GIF picker"],
-button[aria-label="Send a gift"],
-button[aria-label="Apps"] {
+.visual-refresh button[aria-label="Seleccionar emojis"],
+button[aria-label="Abrir selector de GIFs"],
+button[aria-label="Abrir selector de stickers"],
+button[aria-label="Enviar un regalo"],
+button[aria-label="Aplicaciones"] {
   display: none;
 }
 .visual-refresh .buttons__74017 {
   align-items: center;
   gap: 0.1px;
-}
-
-/* === Fullscreen emoji/sticker/gif modal === */
-.layerContainer_da8173 .positionLayer__08434 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 100;
-}
-
-.positionLayer__08434 .drawerSizingWrapper__08434 {
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  width: 90vw !important;
-  height: 90vh;
 }
