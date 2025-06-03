@@ -75,10 +75,9 @@ form > div.focusLock__49fc1 > div.rootWithShadow__49fc1 {
 }
 
 /* 🔒 Ocultar sección "Actividad — 2" en Discord */
-.membersGroup_c8ffbb.container__13cf1.header__13cf1.text-sm\/medium__13cf1:has(span.hiddenVisually__27f77:has(:is(:contains('Actividad')))) {
+h3[aria-label*="Actividad"] {
   display: none !important;
 }
-
 
 /* === Remove Chatbox Icons (by Sessh) === */
 /* to change, select one of the "button[aria-label="Select emoji"]" areas and change the text that's inside those " " */
