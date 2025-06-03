@@ -92,6 +92,14 @@ Before:\
 After:\
 ![image](https://github.com/user-attachments/assets/2bbb8b96-d194-4a06-b0fc-ea3c9fcd90aa)
 
+
+### Fullscreen Emoji/Sticker/GIF Modal | Made by [@Blade04208](https://github.com/Blade04208)
+Before:\
+![image](https://github.com/user-attachments/assets/f5bd39a1-12ef-408a-ae8d-717955ccbaea)
+
+After:\
+![image](https://github.com/user-attachments/assets/38a11f30-fff3-4751-9b0a-e78cac5357a8)
+
 # Installing it to your Discord
 
 Use [Vencord](https://github.com/Vendicated/Vencord) or an equivalent client mod that allows you to install themes.
