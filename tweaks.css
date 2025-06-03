@@ -96,14 +96,11 @@ Open GIF picker       - GIF icon
 Send a gift           - Gift icon
 Apps                  - Controller icon
 */
-.visual-refresh button[aria-label="Seleccionar emojis"],
+
 button[aria-label="Abrir selector de GIFs"],
 button[aria-label="Abrir selector de stickers"],
 button[aria-label="Enviar un regalo"],
 button[aria-label="Aplicaciones"] {
   display: none;
 }
-.visual-refresh .buttons__74017 {
-  align-items: center;
-  gap: 0.1px;
-}
+
