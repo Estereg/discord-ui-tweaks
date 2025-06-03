@@ -137,3 +137,26 @@ button[aria-label="Apps"] {
   align-items: center;
   gap: 0.1px;
 }
+
+/* === Fullscreen emoji/sticker/gif modal === */
+.layerContainer_da8173 .positionLayer__08434 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.positionLayer__08434 .drawerSizingWrapper__08434 {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  width: 90vw !important;
+  height: 90vh;
+}
