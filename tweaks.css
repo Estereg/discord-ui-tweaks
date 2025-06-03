@@ -8,166 +8,124 @@
  * @website https://www.avariaxyz.win/
  */
 
-/* Made by https://github.com/sakgoyal */
-/* Move "Collapse" icon to the left of the category names */
-.containerDefault__29444 {
-  > div {
-    padding-left: 0.5em;
+/**
+ * @name Discord UI Tweaks (Optimized)
+ * @author Wolfÿ
+ * @version 1.0.1-opt
+ * @description Optimized version of useful UI enhancements
+ */
 
-    > div {
-      display: flex !important;
-      place-content: start !important;
-      flex-direction: row-reverse !important;
-    }
-  }
+/* === Collapse Icon Left (by sakgoyal) === */
+.containerDefault__29444 > div {
+  padding-left: 0.5em;
+}
+.containerDefault__29444 > div > div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
 }
 
+/* === Remove Profile Reactions (by LuSaffi) === */
+.avatarPopover__2d0ab,
+.statusPopover__2d0ab,
+.activityPopover__2d0ab {
+  display: none;
+}
 
-/* Made by https://github.com/LuSaffi */
-/* Remove Profile Reactions */
-.avatarPopover__2d0ab, .statusPopover__2d0ab, .activityPopover__2d0ab{display:none;}
+/* === Round Guild Icons in Folders (by NSPC911) === */
+.icon_f34534.guildIcon__48112 {
+  border-radius: 50%;
+}
 
-
-/* Made by https://github.com/NSPC911 */
-/* Round Icons in Folders */
-.icon_f34534.guildIcon__48112 { border-radius: 50% !important }
-
-
-/* Made by myself */
-/* Unclamp User Bios to read full text in there */
+/* === Unclamp User Bios === */
 .descriptionClamp_f5f93a:not(.headerText_faa96b .descriptionClamp_f5f93a) {
   -webkit-line-clamp: unset;
   max-height: 400px;
 }
-.viewFullBio_f5f93a{display: none;
+.viewFullBio_f5f93a {
+  display: none;
 }
 
-
-/* Made by https://github.com/hanyuko with a small tweak by my own */
-/* App-Tags revert to Bot-Tags */
-span[class*=botTag]:not(
-    span[class*=botTagAi],
-    span[class*=botTagCozy],
-    span[class*=botTagRemix],
-    span[class*=botTagOP]
-) span[class*=botText] {
+/* === Revert App-Tags to BOT (by hanyuko + tweak) === */
+span[class*="botTag"]:not([class*="botTagAi"], [class*="botTagCozy"], [class*="botTagRemix"], [class*="botTagOP"]) span[class*="botText"] {
   visibility: hidden;
+  position: relative;
 }
-
-span[class*=botTag]:not(
-    span[class*=botTagAi],
-    span[class*=botTagCozy],
-    span[class*=botTagRemix],
-    span[class*=botTagOP]
-) span[class*=botText]:after {
-  content: 'BOT';
+span[class*="botTag"]:not([class*="botTagAi"], [class*="botTagCozy"], [class*="botTagRemix"], [class*="botTagOP"]) span[class*="botText"]::after {
+  content: "BOT";
   visibility: visible;
   position: absolute;
   left: 0;
   font-size: 0.625rem;
 }
 
-
-/* Made by https://github.com/Obsidianninja11 */
-/* Revert User Area to see Servers */
+/* === Revert User Area Panel Spacing (by Obsidianninja11) === */
 .visual-refresh section.panels_c48ade {
   left: calc(var(--custom-guild-list-width) + var(--space-xs));
-  width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
+  width: calc(100% - var(--custom-guild-list-width) - var(--space-xs) * 2);
   box-sizing: content-box;
-
-  .actionButtons_e131a9 button {
-    padding: 0;
-  }
+}
+.visual-refresh .actionButtons_e131a9 button {
+  padding: 0;
 }
 nav.guilds_c48ade {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
-.sidebar_c48ade:after {
+.sidebar_c48ade::after {
   display: none;
 }
 
-
-/* Made by https://x.com/nexpid */
-/* Better Bot forms */
-form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
-    width: var(--modal-width-medium);
-
-    .header__49fc1 {
-        padding: var(--modal-vertical-padding) var(--modal-horizontal-padding);
-        margin-bottom: var(--modal-vertical-padding);
-        border-bottom: var(--border-normal) solid 1px;
-
-        .colorHeaderPrimary_c9946a {
-            text-align: center;
-            font-weight: var(--font-weight-semibold);
-            flex-grow: 1;
-        }
-
-        .closeButton_e858dd {
-            top: unset;
-            right: var(--modal-horizontal-padding);
-            margin-bottom: auto;
-            margin-top: auto;
-
-            .contents__201d5 {
-                height: 24px;
-            }
-        }
-    }
-
-    .submissionWarning_e858dd {
-        display: none;
-    }
-
-    .formItem__1b11b .eyebrow_b717a1 {
-        margin-bottom: 4px;
-
-        .errorMessage_b717a1 {
-            color: var(--text-danger);
-        }
-    }
-
-    .input__0f084.error__0f084:focus {
-        color: var(--text-normal);
-        transition-property0: border-color, color;
-    }
-
-    .footer__49fc1 {
-        justify-content: space-between;
-    }
+/* === Bot Forms (by nexpId) === */
+form > div.focusLock__49fc1 > div.rootWithShadow__49fc1 {
+  width: var(--modal-width-medium);
+}
+.rootWithShadow__49fc1 .header__49fc1 {
+  padding: var(--modal-vertical-padding) var(--modal-horizontal-padding);
+  margin-bottom: var(--modal-vertical-padding);
+  border-bottom: 1px solid var(--border-normal);
+}
+.header__49fc1 .colorHeaderPrimary_c9946a {
+  text-align: center;
+  font-weight: var(--font-weight-semibold);
+  flex-grow: 1;
+}
+.header__49fc1 .closeButton_e858dd {
+  top: unset;
+  right: var(--modal-horizontal-padding);
+  margin: auto 0;
+}
+.closeButton_e858dd .contents__201d5 {
+  height: 24px;
+}
+.submissionWarning_e858dd {
+  display: none;
+}
+.formItem__1b11b .eyebrow_b717a1 {
+  margin-bottom: 4px;
+}
+.errorMessage_b717a1 {
+  color: var(--text-danger);
+}
+.input__0f084.error__0f084:focus {
+  color: var(--text-normal);
 }
 
+/* === Status-Based Activity Icon Fix (by NSPC911 / Rejdesu) === */
+/* NOTE: :has() is heavy. Optional performance tweak is to avoid this. */
+.memberInner__XXXXXX[aria-label*="Online"] [class^="subText"] svg > path[fill="#40a258"] { fill: #43b581; }
+.memberInner__XXXXXX[aria-label*="Idle"] [class^="subText"] svg > path[fill="#40a258"] { fill: #f0b232; }
+.memberInner__XXXXXX[aria-label*="Do Not Disturb"] [class^="subText"] svg > path[fill="#40a258"] { fill: #f23f43; }
+.memberInner__XXXXXX[aria-label*="Streaming"] [class^="subText"] svg > path[fill="#40a258"] { fill: #643da7; }
 
-/* Made by https://github.com/NSPC911 */
-/* Using fixed Code from https://github.com/Rejdesu */
-/* status based activity icon */
-[class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg>path[fill="#40a258"] {
-    fill: #43b581;
+/* === GIF Favorites Cleanup (by MadelineMaid) === */
+[class*="gifFavoriteButton_"] {
+  background-color: transparent;
 }
-[class^=memberInner]:has(> div > [aria-label*="Idle"]) [class^=subText] svg>path[fill="#40a258"] {
-    fill: #f0b232;
-}
-[class^=memberInner]:has(> div > [aria-label*="Do Not Disturb"]) [class^=subText] svg>path[fill="#40a258"] {
-    fill: #f23f43;
-}
-[class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=subText] svg>path[fill="#40a258"] {
-    fill: #643da7;
+[class*="result_"] [class*="favButton"] {
+  right: unset;
 }
 
-
-/* Made by https://github.com/MadelineMaid */
-/* remove fav icon background box in gifs */
-[class*='gifFavoriteButton_'] {
-    background-color: transparent;
-}
-/* move fav button back to left in gif search */
-[class*='result_'] [class*='favButton'] {
-    right: unset;
-}
-
-
-/* Made by Sessh (A Discord User) */
-/* Remove chatbox Icons */
+/* === Remove Chatbox Icons (by Sessh) === */
 /* to change, select one of the "button[aria-label="Select emoji"]" areas and change the text that's inside those " " */
 /*
 Select Emoji          - Emoji icon
@@ -176,10 +134,13 @@ Open GIF picker       - GIF icon
 Send a gift           - Gift icon
 Apps                  - Controller icon
 */
-.visual-refresh button[aria-label="Select emoji"], button[aria-label="Open GIF picker"], button[aria-label="Send a gift"], button[aria-label="Apps"] {
+.visual-refresh button[aria-label="Select emoji"],
+button[aria-label="Open GIF picker"],
+button[aria-label="Send a gift"],
+button[aria-label="Apps"] {
   display: none;
 }
 .visual-refresh .buttons__74017 {
   align-items: center;
-  gap: .1px;
+  gap: 0.1px;
 }
